@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Pi6-doc by visi-pivi-sivi</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Pi6-doc</h1>
+        <h2>doc for PI6</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/visi-pivi-sivi/PI6-doc/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/visi-pivi-sivi/PI6-doc/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/visi-pivi-sivi/PI6-doc" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>
+<a id="welcome-to-the-instruction-of-pi6" class="anchor" href="#welcome-to-the-instruction-of-pi6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the instruction of PI6.</h2>
+
+<p>PI6 which is short for PI-VI, which is the middle name of VISI-PIVI-SIVI(Virtual Private Server). Actually, it is not a Server, it is born for making the maintenance of virtual private server simple and easier.
+PI6 is like a note book, recording every step that the author take while setting up the private server.
+But PI6 is NOT ONLY a note, it is executable.</p>
+
+<h3>
+<a id="for-example" class="anchor" href="#for-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Example</h3>
+
+<p>If you want to set up a ssh protecting on your server.
+You can download the PI6 project, and cd to it directory, then execute:</p>
+
+<pre><code>bash setupssh
+</code></pre>
+
+<p>The first step in record is set the ssh connection keeping alive. So you will be asked whether to set it or not.</p>
+
+<pre><code>set the ssh connection keep alive.[y/n]
+</code></pre>
+
+<p>usually you have two choice, yes or no. If you put unexpected answer, do not be worry about it. You will be mention like:</p>
+
+<pre><code>press 'yes' or 'no'. for more info, try [s/e/m]:
+</code></pre>
+
+<p>the 's' is stand for 'source'. if you chose this here, you will see:</p>
+
+<pre><code>catIntoFile $'\n TCPKeepAlive yes\n ServerAliveInterval 120' /etc/ssh/ssh_config
+</code></pre>
+
+<p>the 'e' is stand for 'explanation'. if you chose this here, you will see:</p>
+
+<pre><code>set the ssh connection keeping alive.
+</code></pre>
+
+<p>the 'm' is stand for 'more'. if you chose this here, you will see:</p>
+
+<pre><code>To avoid to be disconnected, if the client not active for a short time.
+</code></pre>
+
+<p>After you made a decision, the progress will carry on step by step like those above, until the ssh setting up is done.
+You can use Ctrl + C to end the progress anytime you like.</p>
+
+<p>PS. Currently also the setting is for Ubuntu. If you find there is any thing can improve, please feel free to let us know.</p>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
